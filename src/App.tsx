@@ -17,38 +17,38 @@ interface Posts {
   content: Content[];
 }
 
-const posts:Posts[] = [
+const posts: Posts[] = [
   {
-    id:1,
+    id: 1,
     author: {
       avatarUrl: 'http://github.com/brunopp00.png',
-      name:'Bruno Frohlich',
+      name: 'Bruno Frohlich',
       role: 'Estagiario Unimed'
     },
     content: [
-        {type: 'paragraph', content: 'Fala galeraa 👋'},
-        {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
-        {type: 'link', content: 'jane.design/doctorcare'},
-        {type: 'link', content:'#novoprojeto'},
-        {type: 'link', content:'#nlw'},
-        {type: 'link', content:'#rocketseat'}
+      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀' },
+      { type: 'link', content: 'jane.design/doctorcare' },
+      { type: 'link', content: '#novoprojeto' },
+      { type: 'link', content: '#nlw' },
+      { type: 'link', content: '#rocketseat' }
     ],
     publisheAt: new Date('2023-01-13 20:00:00')
   },
   {
-    id:2,
+    id: 2,
     author: {
       avatarUrl: 'http://github.com/diego3g.png',
-      name:'Diego Fernandes',
+      name: 'Diego Fernandes',
       role: 'Professor Rocketseat'
     },
     content: [
-        {type: 'paragraph', content: 'Fala galeraa 👋'},
-        {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
-        {type: 'link', content: 'jane.design/doctorcare'},
-        {type: 'link', content:'#novoprojeto'},
-        {type: 'link', content:'#nlw'},
-        {type: 'link', content:'#rocketseat'}
+      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀' },
+      { type: 'link', content: 'jane.design/doctorcare' },
+      { type: 'link', content: '#novoprojeto' },
+      { type: 'link', content: '#nlw' },
+      { type: 'link', content: '#rocketseat' }
     ],
     publisheAt: new Date('2023-01-15 20:00:00')
   }
@@ -57,10 +57,9 @@ const posts:Posts[] = [
 export function App() {
   return (
     <div>
-      <Header/>
-      
+      <Header />
       <div className={styles.wrapper}>
-        <Sidebar/>
+        <Sidebar />
         <main>
           {posts.map(post => (
             <>
@@ -74,7 +73,7 @@ export function App() {
             </>
           ))}
         </main>
-      </div> 
+      </div>
     </div>
   )
 }
