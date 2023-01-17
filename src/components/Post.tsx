@@ -5,8 +5,10 @@ import { format, formatDistanceToNow } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { FormEvent, InvalidEvent, useState } from 'react'
 
+type Type = 'paragraph'|'link';
+
 interface Content {
-    type: 'paragraph' | 'link';
+    type: Type;
     content: string;
 }
 
