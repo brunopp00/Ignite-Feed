@@ -7,7 +7,7 @@ import { FormEvent, InvalidEvent, useState } from 'react'
 
 type Type = 'paragraph'|'link';
 
-interface Content {
+export interface Content {
     type: Type;
     content: string;
 }
